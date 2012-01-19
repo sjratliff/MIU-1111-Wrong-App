@@ -165,21 +165,34 @@
 			<li data-role="list-divider">Please Fill Out Completely</li>
 		
 		<div data-role="fieldcontain">
-			<label for="club">Pick A Club</label>
-			<select name="club" id="club_choice" data-native-menu="false">
+			<label for="club">Pick A Club:</label>
+			<select name="club" id="club_choice" data-native-menu="true">
 				<option value="Calicos">Calico Jacks Cantina</option>
 				<option value="mcfaddens">McFadden's Saloon</option>
 				<option value="sandbar">Sandbar Peiora</option>
 			</select>
 		</div>
+		
 		<div data-role="fieldcontain">
+			<label for="onlist">Were You On The List:</label>
+			<select data-role="slider">
+				<option value="off">No</option>
+				<option value="on">Yes</option>
+			</select>
+		</div>
+		
+		
+		
+		<div data-role="fieldcontain" data-theme="e">
 			<label for="experince">Rate Your Overall Experience</label>
 			<input type="range" name="slider" id="experience" value="3" min="1" max="5" /> 
 		</div>
 				
-				<label for="location">Location:</label>
-				<input type="text" name="location" id="location" />
 				
+		<div data-role="fieldcontain">
+			<label for="email">Email:</label>
+			<input type="text" name="email" id="email" />
+		</div>	
 				
 			</form>
 		
