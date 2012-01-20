@@ -166,7 +166,8 @@
 		
 		<div data-role="fieldcontain">
 			<label for="club">Pick A Club:</label>
-			<select name="club" id="club_choice" data-native-menu="true">
+			<select name="club" id="club_choice" data-native-menu="false" class="required">
+			<option data-placeholder="true" value>Where Were You?</option>
 				<option value="Calicos">Calico Jacks Cantina</option>
 				<option value="mcfaddens">McFadden's Saloon</option>
 				<option value="sandbar">Sandbar Peiora</option>
@@ -185,14 +186,23 @@
 		
 		<div data-role="fieldcontain" data-theme="e">
 			<label for="experince">Rate Your Overall Experience</label>
-			<input type="range" name="slider" id="experience" value="3" min="1" max="5" /> 
+			<input type="range" name="slider" id="experience" value="3" min="1" max="5"class="required" /> 
 		</div>
 				
 				
 		<div data-role="fieldcontain">
-			<label for="email">Email:</label>
-			<input type="text" name="email" id="email" />
-		</div>	
+			<label for="Email">Email Address</label>
+			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
+			
+		</div>
+		
+			<div data-role="fieldcontain">
+			<input type="submit" value="Send Info" data-theme="e" />
+			<input type="reset" value="Clear Info" data-theme="" />
+					
+		
+		</div>
+			<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
 				
 			</form>
 		
@@ -520,6 +530,7 @@
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
