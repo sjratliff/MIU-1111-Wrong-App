@@ -3,7 +3,6 @@
 <head>
 
 	<meta charset="utf-8">
-	
 	<title>The V.I.P. List Good App</title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
@@ -16,7 +15,8 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/newstyle.css" />
+	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -26,11 +26,11 @@
 <body>
 
 	<div data-role="page" id="home">
-		<div data-role="header" data-position="fixed" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 			<h1>The V.I.P. List</h1>
 		</div>
 		<div 
-		<a href="#additem" data-role="button"><img src="images/cta/vip_ban.jpg"</a>
+		<a href="#feedback" data-role="button"><img src="images/cta/vip_ban.jpg"</a>
 		</div>
 		<div
 		
@@ -63,45 +63,48 @@
 					
 				</a></li>
 				<li><a href="#feedback">
-					<h3>Club Feedback</h3>
+					<h3>Get Into The Club</h3>
 					<p>Where You Treated Like V.I.P.</p>
 					
 				</a></li>
 				
 
 			</ul>
-			<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
+			
 				
 		</div>
 		
+		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
 	<div data-role="page" id="additem" data-add-back-btn="true">
-	<div data-role="header" data-position="fixed">
+	<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 			<h1>Sign Up</h1>
 		</div>
+		<p align=center><img src="images/banner/banner.png"</p>
 	<form action="#" method="post" id="startPage">
                 <fieldset id="startFieldset">
                     <ul id="errors"></ul>
                     <ul id="questions"></ul>
-                        <li id="select"><label for="group">Pick Your Night :</label></li>
-                        <li><label for="tname">Your Name: <label><input type="text" id="tname" /></li>
-                        <li><label for="sex">Gender:</label>
+                      <label   id="select"class="required" for="group">Pick Your Night :</label>
+                      <label for="tname"class="required">Your Name: <label><input type="text" id="tname" />
+                      <label for="sex">Gender:</label>
                     <ul class="checkbox">
-                      <li><input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label></li>
-                      <li><input type="radio" checked value="Female" id="female" name="sex" /><label for="female">Female</label></li>
-                                </ul>
-                        </li>
-                        <li><label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" id="startdate" name='startdate'required aria-required="true" placeholder="1990-01-01">
-                        <li><label for="pword">Number Of People In Party: </label><input type="password" id="pword" name="pword"/></li>
-                        <li><label for="cpword">Phone Number: </label><input type="password" id= "cpword" name="cpword" /></li>
-                        <li><label for="email">Email: </label><input type="email" id="email" placeholder="johnnyblaze@nfl.com" name="email" /></li>
-                        <li><label for="rating">How easy was the site to use? :</label>
-                            <input type="range" min="0" max="10" value="5" name="rating" id="rating">
-                      <li><label for="comments"> Reason For Party? (Birthday, Divorce, Graduation, ETC.): </label><textarea id="comments"></textarea></li></ul>
+                      <input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label>
+                      <input type="radio" checked value="Female" id="female" name="sex" /><label 												for="female">Female</label>
+                      </ul>
+                        
+                        <label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" 								id="startdate" name='startdate'required aria-required="true" 														placeholder="1990-01-01">
+                        <label for="pword">Number Of People In Party: </label><input type="password" id="pword" 									name="pword"/>
+                        <label for="cpword">Phone Number: </label><input type="password" id= "cpword" name="cpword"/>
+               			
+               			<label for="email">Email: </label><input type="email" id="email" 															placeholder="johnnyblaze@nfl.com" name="email" />
+
+ 			   <label for="comments">Reason For Party? (Birthday, Divorce, Graduation, ETC.): </label><textarea 						  id="comments"></textarea></ul>
+ 			   
                 </fieldset>
                 <input type="submit" value="Save Contact" id="submit" /><br />
                 <nav>
@@ -111,18 +114,16 @@
 
             </form>
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
 	
 	<div data-role="page" id="pictures" data-add-back-btn="true">
-
-
-
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 
 <h1>Photo's</h1>
+<p align=center><img src="images/banner/banner.png"</p>
 </div>
 
 <fieldset class="ui-grid-b">
@@ -149,60 +150,75 @@
 </fieldset>
 
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 			</div>
 		</div>
 	
 	<div data-role="page" id="feedback" data-add-back-btn="true">
 		<div data-role="header" data-theme="a">
 			<h1>Club Reviews</h1>
+				<p align=center><img src="images/banner/banner.png"</p>
 	</div>
 		<div data-role="content">
 		
 			<form action="" method="post" id="reviews">
-			<li data-role="list-divider">Please Fill Out Completely</li>
+			
+			
+			<label for="club">*Required Field</label>
+		
+			
 		
 		<div data-role="fieldcontain">
-			<label for="club">Pick A Club:</label>
-			<select name="club" id="club_choice" data-native-menu="false" class="required">
-			<option data-placeholder="true" value>Where Were You?</option>
-				<option value="Calicos">Calico Jacks Cantina</option>
-				<option value="mcfaddens">McFadden's Saloon</option>
-				<option value="sandbar">Sandbar Peiora</option>
+			<label for="club">*Pick A Club</label>
+			<select name="club" id="club-choice" data-native-menu="false" class="required">
+			<option data-placeholder="true" value>Where To Party?</option>
+				<optgroup label="Westside Clubs">
+					<option value="Calicos">Calico Jacks Cantina</option>
+					<option value="mcfaddens">McFadden's Saloon</option>
+				</optgroup>
+				<optgroup label="Eastside Clubs">
+					<option value="sandbar">Sandbar Peiora</option>
+				</optgroup>
+					
 			</select>
 		</div>
 		
 		<div data-role="fieldcontain">
-			<label for="onlist">Were You On The List:</label>
-			<select data-role="slider">
-				<option value="off">No</option>
-				<option value="on">Yes</option>
+			<label for="club">*Have You Been V.I.P. Before?</label>
+			<select name="list" id="on-list" data-native-menu="false" class="required">
+			<option data-placeholder="true"value>Choose One</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
 			</select>
 		</div>
-		
-		
-		
-		<div data-role="fieldcontain" data-theme="e">
-			<label for="experince">Rate Your Overall Experience</label>
-			<input type="range" name="slider" id="experience" value="3" min="1" max="5"class="required" /> 
-		</div>
-				
 				
 		<div data-role="fieldcontain">
-			<label for="Email">Email Address</label>
+			<label for="Email">*Email Address</label>
 			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
 			
 		</div>
 		
-			<div data-role="fieldcontain">
+		
+		<div data-role="fieldcontain">
+			<label for="phone">*Phone Number</label>
+			<input type="tel" name="phone" id="phone"class="required number"placeholder="312-555-1212"> 
+		</div>
+				
+		<div data-role="fieldcontain">
+			<label for="comments">Reason For Party? (Birthday, Divorce, Graduation, ETC.)</label>
+			<textarea></textarea>	
+		</div>
+		
+		<div data-role="fieldcontain">
 			<input type="submit" value="Send Info" data-theme="e" />
 			<input type="reset" value="Clear Info" data-theme="" />
 					
 		
 		</div>
-			<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
+				
+				<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
 				
 			</form>
 		
@@ -219,8 +235,9 @@
 			
 	<div data-role="page" id="events" data-add-back-btn="true">
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 			<h1>Event Stream</h1>
+			<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content">
@@ -360,19 +377,19 @@
 			</ul>
 	</div>
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
 	
 	<div data-role="page" id="places" data-add-back-btn="true">
 	
-	<div data-role="header" data-position="fixed">
+	<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 	
 			<h1>Places To Party</h1>
-			
+				<p align=center><img src="images/banner/banner.png"</p>
 			</div>
 		
 		<div data-role="content">
@@ -403,9 +420,9 @@
 			</ul>
 	</div>
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
@@ -413,10 +430,10 @@
 	
 	<div data-role="page" id="dj" data-add-back-btn="true">
 	
-	<div data-role="header" data-position="fixed">
+	<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 	
 			<h1>The Dj's List</h1>
-			
+				<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content" data-inset="true">
@@ -478,15 +495,16 @@
 
 
 		</div>
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 		
 	</div>
 	<div data-role="page" id="promoter" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Promoter's</h1>
+			<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content" data-inset="true">
@@ -522,10 +540,21 @@
 
 
 		</div>
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
-		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+				<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>
+			<div data-role="footer" data-position="fixed">
+				<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
+		
+			<div data-role="dialog" id="reviewerrors">
+			<div data-role="header" data-theme="a">
+			<h1>Incomplete Fields</h1>
+	</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
