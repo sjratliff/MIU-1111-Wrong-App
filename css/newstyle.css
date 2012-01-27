@@ -172,6 +172,7 @@ fieldset{
 }
 
 ul{
+	background-color: #9d0900;
 	list-style:none;
 }
 
@@ -222,7 +223,7 @@ span{
 /* active state bg on checkbox & radio icons */
 .ui-checkbox-on .ui-icon,
 .ui-radio-on .ui-icon {
-	background-color: black; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+	background-color: #9d0900; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
 }   
 /* Button colors */
 .ui-btn {
@@ -296,8 +297,8 @@ p1{
 }
 
 .ui-button-b{
+	background-color: black;
 	border-width: 1px;
-	background: 			black;
 }
 
 /* All white bg */
